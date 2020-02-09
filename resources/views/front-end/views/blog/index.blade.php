@@ -1,10 +1,9 @@
 @extends('front-end.layouts.default')
 @section('content')
-    <h1 class="my-4">Welcome to My Blogs
-        <small class="head-text">This is my sample website</small>
-    </h1>
+    <h1 class="my-4">Blogs</h1>
+    <hr/>
 
-    <section>
+    <section class="pb-5">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
         <br>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!
@@ -13,8 +12,6 @@
 
 
 
-    <h3 class="my-4">Latest Posts</h3>
-    <hr/>
     <!-- Blog Post -->
     <div class="card mb-4">
         <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
@@ -56,5 +53,15 @@
             <a href="#">Start Bootstrap</a>
         </div>
     </div>
+
+    <!-- Pagination -->
+    <ul class="pagination justify-content-center mb-4">
+        <li class="page-item">
+            <a class="page-link" href="#">&larr; Older</a>
+        </li>
+        <li class="page-item disabled">
+            <a class="page-link" href="#">Newer &rarr;</a>
+        </li>
+    </ul>
 
 @endsection

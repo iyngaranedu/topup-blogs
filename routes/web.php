@@ -10,22 +10,22 @@ Route::get('/', function () {
 
 // blog page
 Route::get('/blog', function () {
-    echo "Welcome to blog list page";
+    return view('front-end.views.blog.index');
 })->name('frontend.blog');
 
 // blog details page
 Route::get('/blog/{id}', function ($id) {
-    echo "Welcome to blog detail page ".$id;
+    return view('front-end.views.blog.view');
 })->name('frontend.blog.view');
 
 // about us page
 Route::get('/about-us', function () {
-    echo "Welcome to about us page";
+    return view('front-end.views.cms.about-us');
 })->name('frontend.about-us');
 
 // contact us page
 Route::get('/contact-us', function () {
-    echo "Welcome to contact us page";
+    return view('front-end.views.cms.contact-us');
 })->name('frontend.contact-us');
 
 /*

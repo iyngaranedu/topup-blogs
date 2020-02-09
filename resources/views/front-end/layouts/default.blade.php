@@ -1,16 +1,58 @@
-<!-- Stored in resources/views/front-end/layouts/default.blade.php -->
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <title>App Name - @yield('title')</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Blog Home - Project (BCC605) - IT TOPUP - Solent University</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{ asset('assets/css/main-style.css') }}" rel="stylesheet">
+
 </head>
+
 <body>
+
 @include('front-end.layouts.header')
 
-<div class="container" style="border: 2px solid aquamarine">
-    @yield('content')
-</div>
+<!-- Page Content -->
+<div class="container">
 
-@include('front-end.layouts.sidebar')
+    <div class="row">
+
+        <!-- Blog Entries Column -->
+        <div class="col-md-8">
+
+            @yield('content')
+
+        </div>
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+
+            @include('front-end.layouts.sidebar')
+
+        </div>
+
+    </div>
+    <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
 @include('front-end.layouts.footer')
+
+<!-- Bootstrap core JavaScript -->
+<script src="{{ asset('assets/vendor/jquery/jquery.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
 </body>
+
 </html>
