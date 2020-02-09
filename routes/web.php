@@ -48,7 +48,7 @@ Route::get('/admin/password/reset', function () {
 
 // Dashboard Page
 Route::get('/admin/', function () {
-    echo "Welcome administration panel - Dashboard Page";
+    return view('back-end.views.dashboard.index');
 })->name('backend.dashboard');
 
 // Category List Page
