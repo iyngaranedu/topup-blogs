@@ -11,10 +11,10 @@
     <title>Blog Home - Project (BCC605) - IT TOPUP - Solent University</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('front-end/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="{{ asset('assets/css/main-style.css') }}" rel="stylesheet">
+    <link href="{{ asset('front-end/assets/css/main-style.css') }}" rel="stylesheet">
 
 </head>
 
@@ -50,8 +50,8 @@
 @include('front-end.layouts.footer')
 
 <!-- Bootstrap core JavaScript -->
-<script src="{{ asset('assets/vendor/jquery/jquery.min.js') }}"></script>
-<script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ asset('front-end/assets/vendor/jquery/jquery.min.js') }}"></script>
+<script src="{{ asset('front-end/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 
 </body>
 
