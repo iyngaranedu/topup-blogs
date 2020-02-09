@@ -5,7 +5,7 @@
 
 // home page
 Route::get('/', function () {
-    echo "Welcome to home page";
+    return view('front-end.views.home.index');
 })->name('frontend.home');
 
 // blog page
