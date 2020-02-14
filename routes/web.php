@@ -8,6 +8,8 @@ Route::get('/', function () {
     return view('front-end.views.home.index');
 })->name('frontend.home');
 
+Route::get('/hello', 'HelloController@hello')->name('frontend.hello.test');
+
 // blog page
 Route::get('/blog', function () {
     return view('front-end.views.blog.index');
