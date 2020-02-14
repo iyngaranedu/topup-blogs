@@ -4,31 +4,22 @@
  */
 
 // home page
-Route::get('/', function () {
-    return view('front-end.views.home.index');
-})->name('frontend.home');
+Route::get('/', 'Frontend\HomeController@index')->name('frontend.home');
 
 Route::get('/hello', 'HelloController@hello')->name('frontend.hello.test');
 
 // blog page
-Route::get('/blog', function () {
-    return view('front-end.views.blog.index');
-})->name('frontend.blog');
+Route::get('/blog', 'Frontend\BlogController@index')->name('frontend.blog');
 
 // blog details page
-Route::get('/blog/{id}', function ($id) {
-    return view('front-end.views.blog.view');
-})->name('frontend.blog.view');
+Route::get('/blog/{id}', 'Frontend\BlogController@view')->name('frontend.blog.view');
 
 // about us page
-Route::get('/about-us', function () {
-    return view('front-end.views.cms.about-us');
-})->name('frontend.about-us');
+Route::get('/about-us', 'Frontend\CmsController@aboutUs')->name('frontend.about-us');
+
 
 // contact us page
-Route::get('/contact-us', function () {
-    return view('front-end.views.cms.contact-us');
-})->name('frontend.contact-us');
+Route::get('/contact-us', 'Frontend\CmsController@contactUs')->name('frontend.contact-us');
 
 /*
  * Back End / Administration panel Routes
