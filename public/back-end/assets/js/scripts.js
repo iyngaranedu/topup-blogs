@@ -19,4 +19,10 @@
         e.preventDefault();
         $("body").toggleClass("sb-sidenav-toggled");
     });
+
+        // The go back button
+        $(".go_back_button").on("click", function(e) {
+            e.preventDefault();
+            window.history.back();
+        });
 })(jQuery);

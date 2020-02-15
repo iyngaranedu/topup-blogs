@@ -40,67 +40,41 @@ Route::get('/admin/password/reset', function () {
 })->name('backend.password.reset');
 
 // Dashboard Page
-Route::get('/admin/', function () {
-    return view('back-end.views.dashboard.index');
-})->name('backend.dashboard');
+Route::get('/admin/', 'Backend\DashboardController@index')->name('backend.dashboard');
 
 // Category List Page
-Route::get('/admin/categories', function () {
-    echo "Welcome administration panel - category list Page";
-})->name('backend.categories');
+Route::get('/admin/categories', 'Backend\CategoryController@index')->name('backend.categories');
 
 // Category Add Page
-Route::get('/admin/categories/add', function () {
-    echo "Welcome administration panel - category add Page";
-})->name('backend.categories.add');
+Route::get('/admin/categories/add', 'Backend\CategoryController@create')->name('backend.categories.add');
 
 // Category store action
-Route::post('/admin/categories/store', function () {
-    echo "Welcome administration panel - category store Page";
-})->name('backend.categories.store');
+Route::post('/admin/categories/store', 'Backend\CategoryController@store')->name('backend.categories.store');
 
 // Category Edit Page
-Route::get('/admin/categories/edit/{$id}', function ($id) {
-    echo "Welcome administration panel - category edit Page - ".$id;
-})->name('backend.categories.edit');
+Route::get('/admin/categories/edit/{id}', 'Backend\CategoryController@edit')->name('backend.categories.edit');
 
 // Category update action
-Route::patch('/admin/categories/update', function () {
-    echo "Welcome administration panel - category update Page";
-})->name('backend.categories.update');
+Route::patch('/admin/categories/update', 'Backend\CategoryController@update')->name('backend.categories.update');
 
 // Category delete action
-Route::delete('/admin/categories/delete', function () {
-    echo "Welcome administration panel - category delete action";
-})->name('backend.categories.delete');
+Route::delete('/admin/categories/delete/{id}', 'Backend\CategoryController@delete')->name('backend.categories.delete');
 
 // Blog List Page
-Route::get('/admin/blogs', function () {
-    echo "Welcome administration panel - blog list Page";
-})->name('backend.blogs');
+Route::get('/admin/posts','Backend\PostController@index')->name('backend.posts');
 
 // Blog Add Page
-Route::get('/admin/blogs/add', function () {
-    echo "Welcome administration panel - blog add Page";
-})->name('backend.blogs.add');
+Route::get('/admin/posts/add', 'Backend\PostController@create')->name('backend.posts.add');
 
 // Blog store action
-Route::post('/admin/blogs/store', function () {
-    echo "Welcome administration panel - blog store Page";
-})->name('backend.blogs.store');
+Route::post('/admin/posts/store', 'Backend\PostController@store')->name('backend.posts.store');
 
 // Blog Edit Page
-Route::get('/admin/blogs/edit/{$id}', function ($id) {
-    echo "Welcome administration panel - blog edit Page - ".$id;
-})->name('backend.blogs.edit');
+Route::get('/admin/posts/edit/{id}', 'Backend\PostController@edit')->name('backend.posts.edit');
 
 // Blog update action
-Route::patch('/admin/blogs/update', function () {
-    echo "Welcome administration panel - blog update Page";
-})->name('backend.blogs.update');
+Route::patch('/admin/posts/update', 'Backend\PostController@update')->name('backend.posts.update');
 
 // Blog delete action
-Route::delete('/admin/blogs/delete', function () {
-    echo "Welcome administration panel - blog delete action";
-})->name('backend.blogs.delete');
+Route::delete('/admin/posts/delete/{id}', 'Backend\PostController@delete')->name('backend.posts.delete');
 

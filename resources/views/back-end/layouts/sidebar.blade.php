@@ -14,8 +14,8 @@
                     <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div
                     ></a>
                 <div class="collapse" id="collapsPosts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
-                    <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="{{route('backend.blogs')}}">Posts</a>
-                        <a class="nav-link" href="{{route('backend.blogs.add')}}">Add New Post</a></nav>
+                    <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="{{route('backend.posts')}}">Posts</a>
+                        <a class="nav-link" href="{{route('backend.posts.add')}}">Add New Post</a></nav>
                 </div>
 
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCategory" aria-expanded="false" aria-controls="collapseCategory"
