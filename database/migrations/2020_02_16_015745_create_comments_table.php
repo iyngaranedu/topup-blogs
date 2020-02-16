@@ -20,6 +20,10 @@ class CreateCommentsTable extends Migration
             $table->string('added_from_ip',45)->nullable();
             $table->unsignedBigInteger('tbl_posts_id')->nullable();
             $table->timestamps();
+
+            $table->foreign('tbl_posts_id')
+                ->references('id')->on('tbl_posts')
+                ->onDelete('cascade');
         });
     }
 
