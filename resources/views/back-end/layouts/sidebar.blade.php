@@ -28,6 +28,16 @@
                         <a class="nav-link" href="{{route('backend.categories.add')}}">Add New Category</a></nav>
                 </div>
 
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsTags" aria-expanded="false" aria-controls="collapsTags"
+                ><div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                    Manage Tags
+                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div
+                    ></a>
+                <div class="collapse" id="collapsTags" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                    <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="{{route('backend.tags')}}">Tags</a>
+                        <a class="nav-link" href="{{route('backend.tags.add')}}">Add New Tag</a></nav>
+                </div>
+
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUser" aria-expanded="false" aria-controls="collapseUser"
                 ><div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
                     Manage Users
