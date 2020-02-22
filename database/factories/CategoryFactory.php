@@ -11,4 +11,3 @@ $factory->define(\App\Category::class, function (Faker $faker) {
         'banner_image' => 'category.jpg'
     ];
 });
-:
