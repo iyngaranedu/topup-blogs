@@ -19,8 +19,8 @@
         <div class="card-header"><i class="fas fa-table mr-1"></i>The Tag Details</div>
         <div class="card-body">
 
-            <form class="pb-3">
-
+            <form class="pb-3" method="post" action="{{ route('backend.tags.store') }}">
+                <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
                 <div class="form-group">
                     <label for="name">Tag</label>
                     <input type="text" class="form-control" id="name" name="name" placeholder="Tag">
