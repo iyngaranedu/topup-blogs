@@ -23,7 +23,7 @@
                 <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
                 <div class="form-group">
                     <label for="name">Tag</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Tag">
+                    <input type="text" class="form-control" id="tag" name="tag" placeholder="Tag">
                 </div>
 
                 <button type="submit" class="btn btn-primary">Submit</button>
