@@ -5,11 +5,11 @@ namespace App\Http\Controllers\Backend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class TagsController extends Controller
+class TagController extends Controller
 {
     public function create()
     {
-        return 'Tags - create';
+        return view('back-end.views.tags.create');
     }
 
     public function store()
