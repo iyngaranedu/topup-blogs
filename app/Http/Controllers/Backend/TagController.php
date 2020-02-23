@@ -9,6 +9,12 @@ use Illuminate\Support\Facades\DB;
 
 class TagController extends Controller
 {
+    public function index()
+    {
+        $tags = DB::table('tbl_tags')->get();
+        return view('back-end.views.tags.index', ['tags' => $tags]);
+    }
+
     public function create()
     {
         return view('back-end.views.tags.create');

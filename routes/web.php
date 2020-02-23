@@ -79,6 +79,9 @@ Route::patch('/admin/posts/update', 'Backend\PostController@update')->name('back
 Route::delete('/admin/posts/delete/{id}', 'Backend\PostController@delete')->name('backend.posts.delete');
 
 // Tag Add Page
+Route::get('/admin/tags', 'Backend\TagController@index')->name('backend.tags.index');
+
+// Tag Add Page
 Route::get('/admin/tags/add', 'Backend\TagController@create')->name('backend.tags.add');
 
 // Tag store action
